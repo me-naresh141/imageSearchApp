@@ -1,0 +1,51 @@
+@import './reset';
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  background: rgba(236, 236, 180, 0.745);
+  padding: 1rem;
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+  }
+}
+.container {
+  max-width: 1600px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+
+  .inputDiv {
+    margin: 2rem;
+    input {
+      font-size: 2rem;
+    }
+  }
+  .image-div {
+    width: 100%;
+    text-align: center;
+    img {
+      width: 20%;
+      margin: 1rem;
+    }
+  }
+}
+
+// media query
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    .inputDiv {
+      width: 80%;
+      input {
+        width: 100%;
+      }
+    }
+  }
+}
